@@ -49,13 +49,12 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: aws-omnivore/deployment
-        path: aws-omnivore/deployment/recommendation
         ref: main  # branch
         token: ${{ secrets.GH_TOKEN }}
         
     - name: k8s manifest update
       run: |
-        cd recommendation
+        cd aws-omnivore/deployment/recommendation
         sed -i "s@ \
         image: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:.*@ \
         image: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}@g" deployment.yml
