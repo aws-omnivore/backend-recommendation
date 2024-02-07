@@ -48,7 +48,7 @@ jobs:
     - name: Checkout Deployment Repository
       uses: actions/checkout@v4
       with:
-        repository: yyyubn/deployment
+        repository: aws-omnivore/deployment
         path: recommendation
         ref: main  # branch
         token: ${{ secrets.GH_TOKEN }}
