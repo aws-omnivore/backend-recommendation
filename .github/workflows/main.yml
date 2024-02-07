@@ -64,6 +64,6 @@ jobs:
       run: |
         git config user.email ${{ env.GIT_EMAIL }}
         git config user.name ${{ env.GIT_NAME }}
-        git add deployment.yml
+        git add aws-omnivore/deployment/recommendation/deployment.yml
         git commit -m "Update image tag"
         git push origin main
