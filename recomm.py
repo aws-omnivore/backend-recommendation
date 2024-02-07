@@ -78,7 +78,7 @@ def get_items_by_store_id_existence(table):
 
 
 
-@app.route('/recomm', methods=['POST','GET'])
+@app.route('/api/v1/recomm', methods=['POST','GET'])
 def recommendation222():
     items = get_items_by_store_id_existence(table)
 
