@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest  #job을 실행할 환경
     steps:
 
-    - uses: actions/checkout@v4 # uses=액션들. 이미 만들어진 액션을 검색해서 가져다 쓰면된다.
+    - uses: actions/checkout@v4 # uses=액션들. 이미 만들어진 액션을 검색해서 가져다 쓰면된다
       with:
         fetch-depth: 1          #가장 최근 commit한 히스토리만 가져온다.
 
