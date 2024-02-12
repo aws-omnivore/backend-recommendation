@@ -50,7 +50,6 @@ def translate_text(text, target_language):
 def translate_store_info(store_info: dict, target_language): # target_language는 유저정보 받아오는 data에 따라 바뀔 것
     translated_store = {}
     if store_info:
-        # 가게 정보에서 번역 대상 텍스트 추출 (이 예제에서는 'name' 필드를 번역합니다)
         
         name_to_translate = store_info.get('name', '')
         category_to_translate = store_info.get('category', '')
