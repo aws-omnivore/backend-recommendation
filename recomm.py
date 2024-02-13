@@ -114,7 +114,7 @@ def recommendation222():
     #user_location = get_user_location()
     coordinates = np.array(coordinates_array)
     print(coordinates.shape)
-    for i in range (len(coordinates_array)): #위도 경도 담긴 만큼 돌거임
+    for i in range (len(coordinates_array)): #위도 경도 담긴 만큼
         location = np.array(location)
         print(location.shape)
         result=np.abs(np.sum(np.array(location)-np.array(coordinates_array[i])))
